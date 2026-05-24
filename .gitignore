@@ -1,7 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-/node_modules
+**/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -16,22 +14,38 @@
 # next.js
 /.next/
 /out/
+.next/
+out/
 
 # production
 /build
+build/
+dist/
 
-# misc
-.DS_Store
-*.pem
+# database files (but NOT migrations - they should be committed!)
+*.db
+*.sqlite
+*.sqlite3
+dev.db
 
-# debug
+# uploads
+uploads/
+
+# environment variables
+.env
+.env.local
+.env.*.local
+.env.*.production.local
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# misc
+.DS_Store
+*.pem
 
 # vercel
 .vercel
@@ -39,3 +53,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
