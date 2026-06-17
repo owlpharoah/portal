@@ -26,7 +26,7 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="flex items-center gap-8">
-          <NavLink href="/alumni">
+          <NavLink href="/alumnis">
             Alumnis
           </NavLink>
 
