@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NavLink from "./NavLink";
+import NavLink from "./Navlink.jsx";
 
 export default function Header() {
   return (
