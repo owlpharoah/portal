@@ -10,20 +10,27 @@ import dish9 from "@/assets/images/dish-9.png";
 import dish10 from "@/assets/images/dish-10.png";
 import dish11 from "@/assets/images/dish-11.png";
 
+
 const dishes = [
-    {
+  {
     id: 1,
+
     name: "Rice",
+
     image: rice,
+
     position: {
-        x: 50,
-        y: 67,
+      x: 30,
+      y: 91.5,
     },
+
     size: {
-        width: 260,
-        height: 260,
-    }
-    }
+      width: 260,
+      height: 260,
+    },
+
+    zIndex: 10,
+  },
 ];
 
 export default dishes;
